@@ -29,14 +29,14 @@
     font-weight: bold;
     padding: 0 20px;
     line-height: 70px;
-    font-family: serif;
+    font-family: monospace;
 }
 
 .nav-menu {
     display: flex;
     margin-left: 40px;
     list-style: none;
-    font-family: serif;
+    font-family: monospace;
 }
 
 .nav-menu-item {
