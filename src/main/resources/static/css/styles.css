@@ -1,0 +1,10 @@
+#pieDePagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #f5ebdc;
+    color: #d62300;
+    text-align: center;
+}
