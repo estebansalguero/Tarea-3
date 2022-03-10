@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org" lang="es">
     <head>
-        <title>TODO supply a title</title>
+        <title>COMIDAS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
-        
-        algo xd
-       
-        
-        <table border="1">
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">COMIDAS</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Review.html">Reseñas</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Restaurants.html">Restaurantes</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Recommendations.html">Recomendaciones</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- comment 
+        <section id="contenido">
+            <table border="1">
                 <tr>
+                    <td>id</td>
                     <td>titulo</td>
                     <td>review</td>
                     <td>autor</td>
-                    <td>review</td>
                     <td>fecha</td>
                 </tr>
                 <tr th:each="item : ${postsDB}">
+                    <td th:text="${item.idPub}"></td>
                     <td th:text="${item.titulo}"></td>
                     <td th:text="${item.autor}"></td>
                     <td th:text="${item.review}"></td>
-                    <td th:text="${item.fecha}"></td>
+                    <td th:text="${item.date}"></td>
                 </tr>
             </table>
-        
+        </section>
+        -->
+
+        <br>
+        <h1>Reseñas desde una base de datos</h1>
+        <br>
+
+        <div th:if="${postsDB != null and !postsDB.empty}">
+            <table border="1">
+                <tr>
+                    <td>ID</td>
+                    <td>Titulo</td>
+                    <td>Review</td>
+                    <td>Autor</td>
+                    <td>Fecha</td>
+                </tr>
+
+                <tr th:each="item: ${postsDB}">
+                    <td th:text="${item.idPub}"></td>
+                    <td th:text="${item.titulo}"></td>
+                    <td th:text="${item.autor}"></td>
+                    <td th:text="${item.review}"></td>
+                    <td th:text="${item.date}"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div th:if="${postsDB == null or postsDB.empty}"> 
+            La lista de reseñas está vacía
+        </div>
+
+
+        <footer id="pieDePagina">
+            Derechos reservados DreamTeam &reg; 2022
+        </footer>
     </body>
 </html>
