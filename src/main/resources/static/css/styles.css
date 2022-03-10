@@ -4,7 +4,26 @@
     left: 0;
     height: 7%;
     width: 100%;
-    background-color: #f5ebdc;
+    background-color: #ccb3b3;
     color: #d62300;
     text-align: center;
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    height: 81%;
+    width: 100%;
+    background-color: #f5ebdc;
+    color: black;
+    overflow: auto;
+}
+
+#arroz_con_pollo{
+    text-indent: 20px;
+}
+
+#chifrijo{
+    text-indent: 20px;
 }
