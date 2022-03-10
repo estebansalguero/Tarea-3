@@ -19,10 +19,10 @@ public class PostsController {
     
     @GetMapping("/Review.html")
     public String publicaciones (Model model){
-        
+        /*
         var postsDB = publicacionService.getPublicacion();
         model.addAttribute("postsDB", postsDB);
-        
+        */
         return "reviews";
     }
 }
