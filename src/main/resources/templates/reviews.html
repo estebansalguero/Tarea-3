@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        algo
+       
+        <table border="1">
+                <tr>
+                    <td>titulo</td>
+                    <td>review</td>
+                    <td>autor</td>
+                    <td>review</td>
+                    <td>fecha</td>
+                </tr>
+                <tr th:each="item : ${postsDB}">
+                    <td th:text="${item.titulo}"></td>
+                    <td th:text="${item.autor}"></td>
+                    <td th:text="${item.review}"></td>
+                    <td th:text="${item.fecha}"></td>
+                </tr>
+            </table>
+    </body>
+</html>
