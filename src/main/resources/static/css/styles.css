@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 7%;
+    height: 5%;
     width: 100%;
     background-color: #ccb3b3;
     color: #d62300;
@@ -11,9 +11,9 @@
 
 #contenido {
     position: absolute;
-    top: 12%;
+    top: 8.7%;
     left: 0%;
-    height: 81%;
+    height: 90%;
     width: 100%;
     background-color: #f5ebdc;
     color: black;
@@ -26,4 +26,16 @@
 
 #chifrijo{
     text-indent: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+*{
+ 
+ font-family: 'Helvetica', sans-serif;
 }
