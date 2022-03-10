@@ -20,7 +20,10 @@
             </nav>
         </header>
 
+<<<<<<< Updated upstream
         <!-- comment 
+=======
+>>>>>>> Stashed changes
         <section id="contenido">
             <table border="1">
                 <tr>
@@ -38,6 +41,7 @@
                     <td th:text="${item.date}"></td>
                 </tr>
             </table>
+<<<<<<< Updated upstream
         </section>
         -->
 
@@ -56,6 +60,18 @@
                 </tr>
 
                 <tr th:each="item: ${postsDB}">
+=======
+            <br><br><br>
+            <table border="1">
+                <tr>
+                    <td>id</td>
+                    <td>titulo</td>
+                    <td>review</td>
+                    <td>autor</td>
+                    <td>fecha</td>
+                </tr>
+                <tr th:each="item : ${publicacion}">
+>>>>>>> Stashed changes
                     <td th:text="${item.idPub}"></td>
                     <td th:text="${item.titulo}"></td>
                     <td th:text="${item.autor}"></td>
@@ -63,12 +79,16 @@
                     <td th:text="${item.date}"></td>
                 </tr>
             </table>
+<<<<<<< Updated upstream
         </div>
 
         <div th:if="${postsDB == null or postsDB.empty}"> 
             La lista de reseñas está vacía
         </div>
 
+=======
+        </section>
+>>>>>>> Stashed changes
 
         <footer id="pieDePagina">
             Derechos reservados DreamTeam &reg; 2022

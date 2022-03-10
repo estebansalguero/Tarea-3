@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Pub")
+@Table(name = "ub")
 public class Publicacion implements Serializable {
        private static final long serialVersionUID = 1L;
        @Id
@@ -25,8 +25,8 @@ public class Publicacion implements Serializable {
            
        }
 
-    public Publicacion(Long idPub, String titulo, String autor, String review, String date) {
-        this.idPub = idPub;
+    public Publicacion(String titulo, String autor, String review, String date) {
+        
         this.titulo = titulo;
         this.autor = autor;
         this.review = review;

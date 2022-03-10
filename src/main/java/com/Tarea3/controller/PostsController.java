@@ -1,6 +1,7 @@
 package com.Tarea3.controller;
 
 
+import com.Tarea3.domain.Publicacion;
 import com.Tarea3.service.PublicacionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -26,6 +27,11 @@ public class PostsController {
         var postsDB = publicacionService.getPublicacion();
         model.addAttribute("postsDB", postsDB);
         */
+        
+        Publicacion publicacion = new Publicacion("1","1","1","1");
+        model.addAttribute(publicacion);
+        
+        
         return "reviews";
     }
 }
